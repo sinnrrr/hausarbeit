@@ -1,28 +1,19 @@
-import Head from 'next/head'
-import styles from '../styles/home.module.scss'
+import Head from 'next/head';
+import styles from '../styles/home.module.scss';
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    return (
+        <div className={styles.container}>
+            <Head>
+                <title>Шлях, ціною в життя</title>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Hello world</h1>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+            <main className={styles.main}>
+                <section className={styles.landingBlock}>
+                    <h1>Шлях, ціною в життя</h1>
+                </section>
+            </main>
+        </div>
+    )
 }
