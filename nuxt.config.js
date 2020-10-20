@@ -37,7 +37,9 @@ export default {
   axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
-    publicPath: '/dist/'
-  },
+  build: {},
+  
+   generate: {
+     dir: 'dist'
+   }
 }
