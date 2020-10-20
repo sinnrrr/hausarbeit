@@ -22,10 +22,10 @@ export default {
 
 <style lang="scss" scoped>
 .landing__button {
-  border: 3px solid $white;
+  border: 4px solid $white;
   font-size: 2vmax;
   font-weight: 700;
-  padding: 1vmax;
+  padding: 2vmax;
 
   &:nth-child(2n) {
     margin-right: 2em;
