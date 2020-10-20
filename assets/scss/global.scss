@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: $black;
+  background: $white;
+}
+
+::selection {
+  color: $black;
+  background: $white;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: $black;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: $white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 6vmax;
+  font-weight: 700;
+  text-shadow: 0 0 1em $white;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
