@@ -1,12 +1,16 @@
 * {
+  outline: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::-moz-selection { /* Code for Firefox */
