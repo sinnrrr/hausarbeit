@@ -1,9 +1,15 @@
 <template>
   <section class="landing">
     <lazy-blockquote />
-    <div class="landing__buttons"></div>
-    <lazy-button to="/fact/1" body="Take a tour" />
-    <lazy-button to="/calendar" body="Calendar" />
+    <div class="landing__buttons">
+      <nuxt-link class="landing__button" to="/fact/1">Take a tour</nuxt-link>
+      <a
+        class="landing__button"
+        href="https://calendar.google.com/calendar/u/0?cid=NXM2ODFyYzIwa2kxYjMyc2JmdGo4ZmJpNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
+      >
+        Calendar
+      </a>
+    </div>
   </section>
 </template>
 
@@ -12,15 +18,3 @@ export default {
   layout: 'landing',
 }
 </script>
-
-<style scoped>
-.landing {
-  margin-top: 6rem;
-}
-
-.landing__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 4rem;
-}
-</style>

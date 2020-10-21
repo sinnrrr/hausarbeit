@@ -13,15 +13,3 @@ export default {
   name: 'Blockquote',
 }
 </script>
-
-<style lang="scss" scoped>
-.landing__blockquote {
-  font-family: 'Playfair Display', sans-serif;
-  font-size: 4vmax;
-  transition: $transition;
-
-  img {
-    height: 4vmax;
-  }
-}
-</style>
