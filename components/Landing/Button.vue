@@ -31,5 +31,14 @@ export default {
     margin-right: 2em;
     margin-left: 2em;
   }
+
+  &:hover {
+    color: $black;
+    background-color: $white;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
 }
 </style>
