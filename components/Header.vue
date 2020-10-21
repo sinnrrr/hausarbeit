@@ -11,7 +11,7 @@
 
 <script lang="ts">
 export default {
-  name: 'Navbar',
+  name: 'Header',
 }
 </script>
 
@@ -24,7 +24,7 @@ header {
 
 .menu {
   margin-top: 12px;
-  margin-left: 24px;
+  margin-left: 48px;
 
   img {
     transition: $transition;

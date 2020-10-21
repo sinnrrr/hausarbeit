@@ -8,6 +8,14 @@
   </div>
 </template>
 
+<script lang="ts">
+export default {
+  transition: {
+    appear: true,
+  },
+}
+</script>
+
 <style>
 .container {
   min-height: 100vh;

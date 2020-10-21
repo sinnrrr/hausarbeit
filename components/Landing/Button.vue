@@ -25,7 +25,7 @@ export default {
   border: 4px solid $white;
   font-size: 2vmax;
   font-weight: 700;
-  padding: 2vmax;
+  padding: 1vmax;
 
   &:nth-child(2n) {
     margin-right: 2em;

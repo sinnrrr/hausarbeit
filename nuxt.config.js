@@ -18,7 +18,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/assets/scss/global.scss'],
+  css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [],
@@ -42,7 +42,7 @@ export default {
   ],
 
   styleResources: {
-    scss: ['@/assets/scss/variables.scss'],
+    scss: ['@/assets/scss/variables.scss', '@/assets/scss/global.scss'],
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

@@ -44,11 +44,13 @@ h1 {
   font-family: "Playfair Display", sans-serif;
 }
 
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
+
+.page, .layout {
+  &-enter-active, &-leave-active {
+    transition: opacity .5s;
+  }
+
+  &-enter, &-leave-to {
+    opacity: 0;
+  }
 }
