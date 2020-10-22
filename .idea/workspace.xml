@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a63a45a-ab37-4212-a76a-9e6a1057b064" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j35XLuyMlg6clKgsRbQmC7751C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/facts" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/components/Landing" />
+      <recent name="$PROJECT_DIR$/pages" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a63a45a-ab37-4212-a76a-9e6a1057b064" name="Default Changelist" comment="" />
+      <created>1603019972239</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603019972239</updated>
+      <workItem from="1603019973277" duration="5633000" />
+      <workItem from="1603225999227" duration="29000" />
+      <workItem from="1603226032660" duration="9688000" />
+      <workItem from="1603303289906" duration="14287000" />
+      <workItem from="1603373757119" duration="20882000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="674" y="1422" width="561" height="391" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603392463578">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="674" y="1422" width="561" height="391" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080/0.1080.1920.1080@0.1080.1920.1080" timestamp="1603392463578" />
+    <state x="455" y="175" key="SettingsEditor" timestamp="1603237636772">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="455" y="175" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1603237636772" />
+    <state width="498" height="445" key="SwitcherDM" timestamp="1603368139895">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="498" height="445" key="SwitcherDM/0.0.1920.1080@0.0.1920.1080" timestamp="1603368139895" />
+    <state x="565" y="1232" width="780" height="771" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603394364087">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="565" y="1232" width="780" height="771" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080/0.1080.1920.1080@0.1080.1920.1080" timestamp="1603394364087" />
+    <state x="657" y="1364" width="605" height="570" key="find.popup" timestamp="1603398130193">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="657" y="1364" width="605" height="570" key="find.popup/0.0.1920.1080/0.1080.1920.1080@0.1080.1920.1080" timestamp="1603398130193" />
+    <state x="657" y="284" width="605" height="512" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603309855807" />
+    <state x="624" y="1474" key="run.anything.popup" timestamp="1603378309339">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="624" y="1474" key="run.anything.popup/0.0.1920.1080/0.1080.1920.1080@0.1080.1920.1080" timestamp="1603378309339" />
+    <state x="624" y="394" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603234308692" />
+    <state x="624" y="788" key="run.anything.popup/0.0.1920.2160@0.0.1920.2160" timestamp="1603035094466" />
+    <state x="623" y="1319" width="672" height="678" key="search.everywhere.popup" timestamp="1603381881297">
+      <screen x="0" y="1080" width="1920" height="1080" />
+    </state>
+    <state x="623" y="1319" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/0.1080.1920.1080@0.1080.1920.1080" timestamp="1603381881297" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603367772804" />
+  </component>
+</project>
