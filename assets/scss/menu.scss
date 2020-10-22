@@ -21,11 +21,11 @@
   //
     a {
       font-size: 8vmin;
-      opacity: 60%;
+      //opacity: 60%;
       text-decoration-color: transparent;
 
       &:hover {
-        opacity: 80%;
+        //opacity: 80%;
         text-decoration: underline;
         text-decoration-color: map-get($colors, white);
       }
