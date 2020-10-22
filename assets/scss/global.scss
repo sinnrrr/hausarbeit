@@ -14,26 +14,26 @@
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: $black;
-  background: $white;
+  color: map-get($colors, black);
+  background: map-get($colors, white);
 }
 
 ::selection {
-  color: $black;
-  background: $white;
+  color: map-get($colors, black);
+  background: map-get($colors, white);
 }
 
 html {
   margin: 0;
   padding: 0;
-  background-color: $black;
+  background-color: map-get($colors, black);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  color: $white;
+  color: map-get($colors, white);
 }
 
 a {
@@ -46,7 +46,7 @@ h1 {
   transition: $transition;
   font-size: 6vmax;
   font-weight: 700;
-  text-shadow: 0 0 1em $white;
+  text-shadow: 0 0 1em map-get($colors, white);
   font-family: "Playfair Display", sans-serif;
 }
 
@@ -85,7 +85,7 @@ header {
   padding: 1vh 4vw;
 }
 
-.menu {
+.burger {
   margin-top: 12px;
   margin-left: 48px;
 
@@ -96,6 +96,6 @@ header {
 
   & > img:hover {
     padding: 5px;
-    border: 5px solid $white;
+    border: 5px solid map-get($colors, white);
   }
 }

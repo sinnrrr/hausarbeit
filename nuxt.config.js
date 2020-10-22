@@ -39,11 +39,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
-    '@nuxtjs/style-resources',
-  ],
+  modules: ['@nuxt/content', '@nuxtjs/axios', '@nuxtjs/style-resources'],
 
   styleResources: {
     scss: ['@/assets/scss/variables.scss', '@/assets/scss/global.scss'],

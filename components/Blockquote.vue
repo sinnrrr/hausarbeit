@@ -8,7 +8,7 @@
   </blockquote>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   name: 'Blockquote',
 }

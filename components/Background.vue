@@ -1,5 +1,8 @@
 <template>
-  <div :style="this.$store.state.background.options[$route.name]"></div>
+  <div
+    v-if="this.$store.state.background.options[$route.name]"
+    :style="this.$store.state.background.options[$route.name]"
+  ></div>
 </template>
 
 <script>

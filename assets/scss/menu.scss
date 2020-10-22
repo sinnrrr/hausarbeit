@@ -1,3 +1,38 @@
 .menu {
+  min-height: 100vh;
   display: flex;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    //flex: 1;
+    //max-width: 30vw;
+    //max-height: 80vh;
+  //
+  //  &:nth-child(1) {
+  //    justify-content: space-around;
+  //  }
+  //
+    a {
+      font-size: 8vmin;
+      text-decoration-color: transparent;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: map-get($colors, white);
+      }
+    }
+  //
+  //  @media screen and (max-width: map-get($breakpoints, md)) {
+  //    &:nth-child(2) {
+  //      display: none;
+  //    }
+  //  }
+  }
 }

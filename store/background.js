@@ -11,6 +11,7 @@ export const state = () => ({
       height: '100%',
       zIndex: -10,
     },
+    menu: {},
   },
 })
 
