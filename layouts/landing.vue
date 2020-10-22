@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <lazy-background />
     <lazy-header />
     <!--    <lazy-menu />-->
     <main>
@@ -8,8 +9,9 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 export default {
+  name: 'Landing',
   transition: {
     appear: true,
   },

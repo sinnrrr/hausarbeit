@@ -9,31 +9,8 @@
   </header>
 </template>
 
-<script lang="ts">
+<script>
 export default {
   name: 'Header',
 }
 </script>
-
-<style lang="scss">
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  margin-top: 12px;
-  margin-left: 48px;
-
-  img {
-    transition: $transition;
-    height: 6vmax;
-  }
-
-  & > img:hover {
-    padding: 5px;
-    border: 5px solid $white;
-  }
-}
-</style>
