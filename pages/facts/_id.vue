@@ -1,7 +1,7 @@
 <template>
   <section class="fact">
     <nuxt-link to="/">Left</nuxt-link>
-    <nuxt-content :document="content" />
+    <!--    <nuxt-content :document="content" />-->
     <nuxt-link to="/">Right</nuxt-link>
   </section>
 </template>
@@ -16,7 +16,7 @@ export default {
   },
   beforeCreate() {
     console.log(this.$route.path)
-    this.$content(this.$route.path)
+    this.$content({ deep: true })
       .fetch()
       .then(
         function (content) {
