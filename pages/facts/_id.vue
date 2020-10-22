@@ -15,6 +15,7 @@ export default {
     }
   },
   beforeCreate() {
+    console.log(this.$route.path)
     this.$content(this.$route.path)
       .fetch()
       .then(
