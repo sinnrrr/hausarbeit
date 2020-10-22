@@ -21,6 +21,7 @@ export default {
       .then(
         function (content) {
           this.content = content
+          console.log(content)
         }.bind(this)
       )
 
