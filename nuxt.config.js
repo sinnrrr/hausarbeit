@@ -55,7 +55,13 @@ export default {
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    proxy: true,
+  },
+
+  proxy: {
+    '/mail/send/': 'https://' + process.env.PUBLIC_URL + '/mail/send/',
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
