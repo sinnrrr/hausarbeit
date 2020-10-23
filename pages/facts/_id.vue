@@ -26,6 +26,7 @@ export default {
   },
   methods: {
     defineLink(where) {
+      console.log('define')
       if (this.$route.params.id === '1' && where === -1) {
         return '/facts/' + this.$store.state.fact.length
       } else if (
