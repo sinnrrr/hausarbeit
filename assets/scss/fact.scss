@@ -1,0 +1,21 @@
+.fact {
+  display: flex;
+  min-height: 100vh;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    &:nth-of-type(1) {
+      margin-right: 60px;
+    }
+
+    &:nth-of-type(2) {
+      margin-left: 60px;
+    }
+  }
+
+  &__title {
+    font-size: 4vmax;
+  }
+}

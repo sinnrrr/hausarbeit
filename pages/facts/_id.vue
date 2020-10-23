@@ -1,8 +1,8 @@
 <template>
   <section class="fact">
-    <lazy-app-link :to="defineLink(-1)">Left</lazy-app-link>
-    <h1>{{ currentFact.quote }}</h1>
-    <lazy-app-link :to="defineLink(1)">Right</lazy-app-link>
+    <lazy-app-link :to="defineLink(-1)" class="fact__link">L</lazy-app-link>
+    <h1 class="fact__title">{{ currentFact.title }}</h1>
+    <lazy-app-link :to="defineLink(1)" class="fact__link">R</lazy-app-link>
   </section>
 </template>
 
@@ -14,7 +14,7 @@ export default {
       currentFact: this.$store.state.fact[this.$route.params.id - 1],
     }
   },
-  created() {
+  mounted() {
     this.changeBackground()
   },
   updated() {
@@ -23,7 +23,7 @@ export default {
   methods: {
     defineLink(where) {
       if (this.$route.params.id === '1' && where === -1) {
-        return '/'
+        return '/facts/' + this.$store.state.fact.length
       } else if (
         parseInt(this.$route.params.id) === this.$store.state.fact.length
       ) {
@@ -36,7 +36,7 @@ export default {
       this.$store.commit('background/factChange', {
         [this.$route.params.id]: {
           background:
-            `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), ` +
+            `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), ` +
             `url('${this.currentFact.backgroundImage}')`,
           backgroundPosition: 'center top',
           backgroundRepeat: 'no repeat',

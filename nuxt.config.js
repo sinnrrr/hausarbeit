@@ -20,6 +20,7 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     '@/assets/scss/menu',
+    '@/assets/scss/fact',
     '@/assets/scss/landing',
     '@/assets/scss/callback',
     '@/assets/scss/blockquote',
@@ -40,7 +41,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources', '@nuxtjs/axios'],
 
   styleResources: {
     scss: ['@/assets/scss/variables.scss', '@/assets/scss/global.scss'],
@@ -51,4 +52,11 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  mail: {
+    smtp: {
+      host: 'smtp.gmail.com',
+      port: 465,
+    },
+  },
 }
