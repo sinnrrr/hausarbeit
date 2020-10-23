@@ -1,5 +1,7 @@
 <template>
-  <div v-if="defineBackground" :style="defineBackground"></div>
+  <transition name="fade">
+    <div v-if="defineBackground" :style="defineBackground"></div>
+  </transition>
 </template>
 
 <script>
