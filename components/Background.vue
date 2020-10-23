@@ -1,12 +1,16 @@
 <template>
-  <div
-    v-if="this.$store.state.background.options[$route.name]"
-    :style="this.$store.state.background.options[$route.name]"
-  ></div>
+  <div v-if="defineBackground" :style="defineBackground"></div>
 </template>
 
 <script>
 export default {
   name: 'Background',
+  computed: {
+    defineBackground() {
+      return this.$route.name === 'facts-id'
+        ? this.$store.state.background.options.facts[this.$route.params.id]
+        : this.$store.state.background.options[this.$route.name]
+    },
+  },
 }
 </script>

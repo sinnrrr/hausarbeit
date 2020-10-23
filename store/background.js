@@ -12,11 +12,15 @@ export const state = () => ({
       zIndex: -10,
     },
     menu: {},
+    facts: {},
   },
 })
 
 export const mutations = {
   change(state, options) {
     state.option = Object.assign(options, state.options)
+  },
+  factChange(state, options) {
+    state.options.facts = Object.assign(options, state.options.facts)
   },
 }

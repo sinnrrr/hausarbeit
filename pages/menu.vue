@@ -1,6 +1,6 @@
 <template>
   <section class="menu">
-    <div class="menu_wrapper">
+    <div class="menu__wrapper">
       <div class="menu__container">
         <nuxt-link to="/">Головна</nuxt-link>
         <nuxt-link to="/facts/1">Факти</nuxt-link>
@@ -10,16 +10,18 @@
         >
         <nuxt-link to="/callback">Зворотній зв'язок</nuxt-link>
       </div>
-      <!--      <div class="menu__container">-->
-      <!--        <h1>Menu</h1>-->
-      <!--        <div>close</div>-->
-      <!--        <span>-->
-      <!--          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at-->
-      <!--          beatae consequuntur cumque debitis, eaque expedita fuga impedit-->
-      <!--          incidunt magnam, odit officia officiis porro quae quam sapiente-->
-      <!--          suscipit totam vero!</span-->
-      <!--        >-->
-      <!--      </div>-->
+      <div class="menu__container">
+        <header class="menu__header">
+          <h1>Menu</h1>
+          <nuxt-link to="/">close</nuxt-link>
+        </header>
+        <span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at
+          beatae consequuntur cumque debitis, eaque expedita fuga impedit
+          incidunt magnam, odit officia officiis porro quae quam sapiente
+          suscipit totam vero!</span
+        >
+      </div>
     </div>
   </section>
 </template>
