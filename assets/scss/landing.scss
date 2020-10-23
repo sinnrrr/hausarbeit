@@ -1,0 +1,30 @@
+.landing {
+  margin-top: 6rem;
+}
+
+.landing__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.landing__button {
+  border: 4px solid map-get($colors, white);
+  font-size: 2vmax;
+  font-weight: 700;
+  padding: 1vmax;
+
+  &:nth-child(2n) {
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+
+  &:hover {
+    color: map-get($colors, black);
+    background-color: map-get($colors, white);
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}

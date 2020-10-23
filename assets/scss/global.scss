@@ -1,0 +1,101 @@
+* {
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: map-get($colors, black);
+  background: map-get($colors, white);
+}
+
+::selection {
+  color: map-get($colors, black);
+  background: map-get($colors, white);
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background-color: map-get($colors, black);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: map-get($colors, white) !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: $transition;
+}
+
+h1 {
+  transition: $transition;
+  font-size: 6vmax;
+  font-weight: 700;
+  text-shadow: 0 0 1em map-get($colors, white);
+  font-family: "Playfair Display", sans-serif;
+}
+
+.page, .layout {
+  &-enter-active, &-leave-active {
+    transition: opacity .5s;
+  }
+
+  &-enter, &-leave-to {
+    opacity: 0;
+  }
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 1vh 4vw;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 4vw;
+}
+
+.burger {
+  margin-top: 12px;
+  margin-left: 48px;
+
+  img {
+    transition: $transition;
+    height: 6vmax;
+  }
+
+  & > img:hover {
+    padding: 5px;
+    border: 5px solid map-get($colors, white);
+  }
+}
