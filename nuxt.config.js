@@ -41,7 +41,7 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources', '@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', '@nuxtjs/style-resources', 'nuxt-mail'],
 
   styleResources: {
     scss: ['@/assets/scss/variables.scss', '@/assets/scss/global.scss'],
@@ -57,6 +57,10 @@ export default {
     smtp: {
       host: 'smtp.gmail.com',
       port: 465,
+      auth: {
+        username: 'dimasoltusyuk@gmail.com',
+        password: 'PCI7135gotview',
+      },
     },
   },
 }

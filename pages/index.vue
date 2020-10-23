@@ -16,13 +16,13 @@
 <script>
 export default {
   layout: 'landing',
-  // mounted() {
-  //   this.$mail.send({
-  //     from: 'John Doe',
-  //     subject: 'Incredible',
-  //     text: 'This is an incredible test message',
-  //     to: 'johndoe@gmail.com',
-  //   })
-  // }
+  mounted() {
+    this.$mail.send({
+      from: 'asddsasdasdas@asd.asdcom',
+      subject: 'Incredible',
+      text: 'This is an incredible test message',
+      to: 'dimasoltusyuk@gmail.com',
+    })
+  },
 }
 </script>

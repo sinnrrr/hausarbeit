@@ -11,7 +11,7 @@
       </div>
       <div class="menu__container">
         <header class="menu__header">
-          <h1>Menu</h1>
+          <h1>Меню</h1>
           <lazy-app-link to="/" class="burger"
             ><img src="/svg/close.svg" alt="Close icon"
           /></lazy-app-link>
