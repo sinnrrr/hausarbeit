@@ -26,7 +26,8 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
-    "nuxt-mail": "^1.0.1"
+    "nuxt-mail": "^1.0.1",
+    "vue2-touch-events": "^2.3.2"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.6",

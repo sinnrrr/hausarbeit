@@ -1,5 +1,9 @@
 <template>
-  <section class="fact">
+  <section
+    v-touch:swipe.left="defineLink(-1)"
+    v-touch:swipe.right="defineLink(1)"
+    class="fact"
+  >
     <lazy-app-link :to="defineLink(-1)" class="fact__link">L</lazy-app-link>
     <h1 class="fact__title">{{ currentFact.title }}</h1>
     <lazy-app-link :to="defineLink(1)" class="fact__link">R</lazy-app-link>
