@@ -12,8 +12,7 @@ export const state = () => [
   {
     title: 'Нагадування',
     description: 'lorem ipsumipsumipsumipsumipsumipsumipsumipsum...',
-    url:
-      'https://calendar.google.com/calendar/u/0?cid=NXM2ODFyYzIwa2kxYjMyc2JmdGo4ZmJpNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ',
+    url: process.env.calendarURL,
   },
   {
     title: "Зворотній зв'язок",

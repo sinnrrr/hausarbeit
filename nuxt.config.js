@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -15,6 +17,10 @@ export default {
           'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@100;200;400;700&display=swap',
       },
     ],
+  },
+
+  env: {
+    calendarURL: process.env.CALENDAR_URL,
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -38,6 +44,7 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/dotenv',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -55,11 +62,11 @@ export default {
 
   mail: {
     smtp: {
-      host: 'smtp.gmail.com',
-      port: 465,
+      host: process.env.SMTP_HOST,
+      port: process.env.SMTP_PORT,
       auth: {
-        username: 'dimasoltusyuk@gmail.com',
-        password: 'PCI7135gotview',
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
       },
     },
   },
