@@ -1,18 +1,17 @@
 <template>
   <section class="fact">
-    <nuxt-link to="/">Left</nuxt-link>
-    <nuxt-link to="/">Right</nuxt-link>
+    <lazy-app-link to="/">Left</lazy-app-link>
+    <h1>{{ currentFact.quote }}</h1>
+    <lazy-app-link to="/">Right</lazy-app-link>
   </section>
 </template>
 
 <script>
-import content from '~/content/facts.json'
-
 export default {
   name: 'Fact',
   data() {
     return {
-      content,
+      currentFact: this.$store.state.fact[this.$route.params.id - 1],
     }
   },
   created() {
@@ -27,7 +26,7 @@ export default {
         [this.$route.params.id]: {
           background:
             `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), ` +
-            `url('${this.content[this.$route.params.id - 1].backgroundImage}')`,
+            `url('${this.currentFact.backgroundImage}')`,
           backgroundPosition: 'center top',
           backgroundRepeat: 'no repeat',
           backgroundSize: 'cover',

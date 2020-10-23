@@ -1,11 +1,11 @@
 <template>
   <header>
     <h1>Шлях, ціною в життя</h1>
-    <nuxt-link to="/menu">
+    <lazy-app-link to="/menu">
       <div class="burger">
         <img src="/svg/menu.svg" alt="Menu icon" />
       </div>
-    </nuxt-link>
+    </lazy-app-link>
   </header>
 </template>
 

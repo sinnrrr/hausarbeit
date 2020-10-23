@@ -8,8 +8,8 @@ export default {
   computed: {
     defineBackground() {
       return this.$route.name === 'facts-id'
-        ? this.$store.state.background.options.facts[this.$route.params.id]
-        : this.$store.state.background.options[this.$route.name]
+        ? this.$store.state.background.facts[this.$route.params.id]
+        : this.$store.state.background[this.$route.name]
     },
   },
 }
