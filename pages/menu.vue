@@ -2,13 +2,9 @@
   <section class="menu">
     <div class="menu__wrapper">
       <div class="menu__container">
-        <nuxt-link to="/">Головна</nuxt-link>
-        <nuxt-link to="/facts/1">Факти</nuxt-link>
-        <a
-          href="https://calendar.google.com/calendar/u/0?cid=NXM2ODFyYzIwa2kxYjMyc2JmdGo4ZmJpNDRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
-          >Нагадування</a
-        >
-        <nuxt-link to="/callback">Зворотній зв'язок</nuxt-link>
+        <lazy-app-link v-for="item in menu" :key="item.indexOf" :to="item.url"
+          >{{ item.title }}
+        </lazy-app-link>
       </div>
       <div class="menu__container">
         <header class="menu__header">
@@ -25,3 +21,36 @@
     </div>
   </section>
 </template>
+
+<script>
+import menu from '~/content/menu.json'
+
+export default {
+  data() {
+    return {
+      menu,
+      links: [],
+    }
+  },
+  computed: {
+    filteredInternal() {
+      this.menu.forEach((link, index) => {
+        if (link.external) {
+          delete this.menu[index]
+        }
+      })
+
+      return this.menu
+    },
+    filteredExternal() {
+      this.menu.forEach((link) => {
+        if (link.external) {
+          this.links.push(link)
+        }
+      })
+
+      return this.links
+    },
+  },
+}
+</script>
