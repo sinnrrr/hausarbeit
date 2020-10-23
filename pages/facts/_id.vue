@@ -1,8 +1,8 @@
 <template>
   <section class="fact">
-    <lazy-app-link to="/">Left</lazy-app-link>
+    <lazy-app-link :to="defineLink(-1)">Left</lazy-app-link>
     <h1>{{ currentFact.quote }}</h1>
-    <lazy-app-link to="/">Right</lazy-app-link>
+    <lazy-app-link :to="defineLink(1)">Right</lazy-app-link>
   </section>
 </template>
 
@@ -21,6 +21,17 @@ export default {
     this.changeBackground()
   },
   methods: {
+    defineLink(where) {
+      if (this.$route.params.id === '1' && where === -1) {
+        return '/'
+      } else if (
+        parseInt(this.$route.params.id) === this.$store.state.fact.length
+      ) {
+        return '/facts/1'
+      } else if (this.$route.params.id < this.$store.state.fact.length) {
+        return '/facts/' + (parseInt(this.$route.params.id) + where)
+      }
+    },
     changeBackground() {
       this.$store.commit('background/factChange', {
         [this.$route.params.id]: {

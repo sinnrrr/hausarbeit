@@ -21,6 +21,7 @@ export default {
   css: [
     '@/assets/scss/menu',
     '@/assets/scss/landing',
+    '@/assets/scss/callback',
     '@/assets/scss/blockquote',
   ],
 

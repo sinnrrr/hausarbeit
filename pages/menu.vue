@@ -12,7 +12,9 @@
       <div class="menu__container">
         <header class="menu__header">
           <h1>Menu</h1>
-          <lazy-app-link to="/">close</lazy-app-link>
+          <lazy-app-link to="/" class="burger"
+            ><img src="/svg/close.svg" alt="Close icon"
+          /></lazy-app-link>
         </header>
         <span
           >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
