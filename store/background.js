@@ -3,7 +3,7 @@ export const state = () => ({
     background:
       "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('/img/index.jpg')",
     backgroundPosition: 'center top',
-    backgroundRepeat: 'no repeat',
+    backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     position: 'absolute',
     width: '100%',

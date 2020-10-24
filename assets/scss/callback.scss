@@ -8,4 +8,15 @@
   p {
     font-size: 4vmin;
   }
+
+  &__form {
+    margin-top: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

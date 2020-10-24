@@ -85,6 +85,21 @@ header {
   padding: 1vh 4vw;
 }
 
+input, textarea {
+  transition: $transition;
+  background-color: transparent;
+  border: 4px solid map-get($colors, white);
+  font-size: 2vmax;
+  padding: 2vh 1vw;
+  color: map-get($colors, white);
+
+  &:focus {
+    color: map-get($colors, black);
+    background-color: map-get($colors, white);
+  }
+}
+
+
 .burger {
   margin-top: 12px;
   margin-left: 48px;
@@ -113,67 +128,3 @@ header {
     }
   }
 }
-
-.formulate-input {
-  // global wrapper styles
-
-  .formulate-input-label {
-    // global label styles
-  }
-
-  .formulate-input-element {
-    // Global field-level wrapper styles
-  }
-
-  .formulate-input-help {
-    // Global help text styles
-  }
-
-  .formulate-input-errors {
-    // Global error message list wrapper
-  }
-
-  .formulate-input-error,
-  .formulate-file-upload-error {
-    // Error message styles
-  }
-
-  .formulate-input-group-item {
-    // Group of items (like list of checkboxes) wrapper
-  }
-
-  // Text inputs
-  // -----------------------------------------------------------------------------
-
-  &[data-classification='text'] {
-    input {
-      // Style all text-like input elements
-    }
-  }
-
-  // Textarea inputs
-  // -----------------------------------------------------------------------------
-
-  &[data-classification='textarea'] {
-    textarea {
-      // Style textareas
-    }
-  }
-
-  // Button inputs
-  // -----------------------------------------------------------------------------
-
-  &[data-classification='button'] {
-    button {
-      // Style button inputs
-    }
-  }
-}
-
-.formulate-form-errors {
-
-  .formulate-form-error {
-    // form errors (not specific to a field)
-  }
-}
-

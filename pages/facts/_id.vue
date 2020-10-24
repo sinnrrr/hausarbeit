@@ -1,13 +1,25 @@
+<script src="../../plugins/vue-touch.js"></script>
 <template>
-  <section
-    v-touch:swipe.left="defineLink(-1)"
-    v-touch:swipe.right="defineLink(1)"
+  <v-touch
+    tag="section"
+    @swipeleft="defineLink(-1)"
+    @swiperight="defineLink(1)"
     class="fact"
   >
-    <lazy-app-link :to="defineLink(-1)" class="fact__link">L</lazy-app-link>
+    <lazy-app-link :to="defineLink(-1)" class="fact__link"
+      ><img
+        class="fact__arrow"
+        src="/svg/left-arrow-angle.svg"
+        alt="Arrow to go back"
+    /></lazy-app-link>
     <h1 class="fact__title">{{ currentFact.title }}</h1>
-    <lazy-app-link :to="defineLink(1)" class="fact__link">R</lazy-app-link>
-  </section>
+    <lazy-app-link :to="defineLink(1)" class="fact__link"
+      ><img
+        class="fact__arrow"
+        src="/svg/right-arrow-angle.svg"
+        alt="Arrow to go forward"
+    /></lazy-app-link>
+  </v-touch>
 </template>
 
 <script>
@@ -18,7 +30,7 @@ export default {
       currentFact: this.$store.state.fact[this.$route.params.id - 1],
     }
   },
-  mounted() {
+  created() {
     this.changeBackground()
   },
   updated() {
@@ -26,7 +38,6 @@ export default {
   },
   methods: {
     defineLink(where) {
-      console.log('define')
       if (this.$route.params.id === '1' && where === -1) {
         return '/facts/' + this.$store.state.fact.length
       } else if (
@@ -44,7 +55,7 @@ export default {
             `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), ` +
             `url('${this.currentFact.backgroundImage}')`,
           backgroundPosition: 'center top',
-          backgroundRepeat: 'no repeat',
+          backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           position: 'absolute',
           width: '100%',
