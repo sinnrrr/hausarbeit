@@ -27,10 +27,12 @@ export default {
   name: 'Fact',
   data() {
     return {
-      currentFact: this.$store.state.fact[this.$route.params.id - 1],
+      currentFactID: parseInt(this.$route.params.id),
+      currentFact: {},
     }
   },
   created() {
+    this.currentFact = this.$store.state.facts[this.currentFactID - 1]
     this.changeBackground()
   },
   updated() {
@@ -38,27 +40,29 @@ export default {
   },
   methods: {
     defineLink(where) {
-      if (this.$route.params.id === '1' && where === -1) {
-        return '/facts/' + this.$store.state.fact.length
-      } else if (
-        parseInt(this.$route.params.id) === this.$store.state.fact.length
-      ) {
-        return '/facts/1'
-      } else if (this.$route.params.id < this.$store.state.fact.length) {
-        return '/facts/' + (parseInt(this.$route.params.id) + where)
+      if (where === 1) {
+        if (this.currentFactID === this.$store.state.facts.length)
+          return '/facts/1'
+        else if (this.currentFactID < this.$store.state.facts.length)
+          return '/facts/' + (this.currentFactID + 1)
+      } else if (where === -1) {
+        if (this.currentFactID === 1)
+          return '/facts/' + this.$store.state.facts.length
+        else if (this.currentFactID <= this.$store.state.facts.length)
+          return '/facts/' + (this.currentFactID - 1)
       }
     },
     handleSwipeLeft() {
-      if (parseInt(this.$route.params.id) === this.$store.state.fact.length) {
+      if (parseInt(this.$route.params.id) === this.$store.state.facts.length) {
         this.$router.push('/facts/1')
-      } else if (this.$route.params.id < this.$store.state.fact.length) {
+      } else if (this.$route.params.id < this.$store.state.facts.length) {
         this.$router.push('/facts/' + (parseInt(this.$route.params.id) + 1))
       }
     },
     handleSwipeRight() {
       if (this.$route.params.id === '1') {
-        this.$router.push('/facts/' + this.$store.state.fact.length)
-      } else if (this.$route.params.id <= this.$store.state.fact.length) {
+        this.$router.push('/facts/' + this.$store.state.facts.length)
+      } else if (this.$route.params.id <= this.$store.state.facts.length) {
         this.$router.push('/facts/' + (parseInt(this.$route.params.id) - 1))
       }
     },
