@@ -2,7 +2,6 @@
   <div class="container">
     <lazy-background />
     <lazy-header />
-    <!--    <lazy-menu />-->
     <main>
       <nuxt />
     </main>

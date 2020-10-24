@@ -1,32 +1,38 @@
 <template>
   <section class="callback">
-    <h1>Зв'язатись з розробником</h1>
-    <p>
+    <h1 v-if="!success">Зв'язатись з розробником</h1>
+    <p v-if="!success">
       Якщо ви маєте ідеї щодо покращення вигляду/роботи сайту, чи зауваження
       можете залишити повідомлення використовучючи дану форму.
     </p>
-    <form class="callback__form" @submit.prevent="sendMail">
-      <label>
-        Ваш емейл
-        <input v-model="formValues.from" type="email" placeholder="Емейл" />
-      </label>
-      <label>
-        Заголовок
-        <input
-          v-model="formValues.subject"
-          type="text"
-          placeholder="Мета зв'язку"
-        />
-      </label>
-      <label>
-        Тіло звернення
-        <textarea
-          v-model="formValues.text"
-          rows="6"
-          placeholder="Детальний опис звернення"
-        ></textarea>
-      </label>
-      <button type="submit">Submit</button>
+    <div v-if="success" class="callback__success">
+      <h1>Звернення було надіслане!</h1>
+      <lazy-app-link to="/">Повернутись на головну</lazy-app-link>
+    </div>
+    <form v-if="!success" class="callback__form" @submit.prevent="sendMail">
+      <ul class="flex-outer">
+        <li>
+          <label for="subject">Заголовок</label>
+          <input
+            id="subject"
+            v-model="formValues.subject"
+            type="text"
+            placeholder="Мета зв'язку"
+          />
+        </li>
+        <li>
+          <label for="text">Тіло звернення</label>
+          <textarea
+            id="text"
+            v-model="formValues.text"
+            rows="4"
+            placeholder="Детальний опис звернення"
+          ></textarea>
+        </li>
+        <li>
+          <button type="submit">Submit</button>
+        </li>
+      </ul>
     </form>
   </section>
 </template>
@@ -36,11 +42,22 @@ export default {
   data() {
     return {
       formValues: {},
+      success: false,
     }
   },
   methods: {
     sendMail() {
-      this.$mail.send({ ...this.formValues, to: 'dimasoltusyuk@gmail.com' })
+      this.$mail
+        .send({
+          ...this.formValues,
+          from: 'feedback@lifeway.vercel.app',
+          to: 'dimasoltusyuk@gmail.com',
+        })
+        .then(
+          function () {
+            this.success = true
+          }.bind(this)
+        )
     },
   },
 }

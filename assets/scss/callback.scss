@@ -9,14 +9,48 @@
     font-size: 4vmin;
   }
 
-  &__form {
-    margin-top: 4vh;
-    display: flex;
-    flex-wrap: wrap;
+  &__success {
+    a {
+      margin-top: 4vh;
+      font-size: 4vmin;
+      text-decoration: underline;
+    }
+  }
 
-    label {
+  .flex-outer {
+    list-style-type: none;
+    margin-top: 2vh;
+    padding: 0;
+
+    li {
+      margin: 2vh 0;
       display: flex;
       flex-direction: column;
+
+      label {
+        font-size: 2vmax;
+      }
+
+      button {
+        cursor: pointer;
+        transition: $transition;
+        margin-top: 2vh;
+        border: 4px solid map-get($colors, white);
+        background-color: transparent;
+        color: map-get($colors, white);
+        font-size: 2vmax;
+        padding: 1vh 0;
+        font-weight: 700;
+
+        &:hover, &:focus {
+          background-color: map-get($colors, white);
+          color: map-get($colors, black);
+        }
+
+        &:active {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
