@@ -2,9 +2,9 @@
 <template>
   <v-touch
     tag="section"
-    @swipeleft="defineLink(-1)"
-    @swiperight="defineLink(1)"
     class="fact"
+    @swipeleft="handleSwipeLeft"
+    @swiperight="handleSwipeRight"
   >
     <lazy-app-link :to="defineLink(-1)" class="fact__link"
       ><img
@@ -46,6 +46,20 @@ export default {
         return '/facts/1'
       } else if (this.$route.params.id < this.$store.state.fact.length) {
         return '/facts/' + (parseInt(this.$route.params.id) + where)
+      }
+    },
+    handleSwipeLeft() {
+      if (parseInt(this.$route.params.id) === this.$store.state.fact.length) {
+        this.$router.push('/facts/1')
+      } else if (this.$route.params.id < this.$store.state.fact.length) {
+        this.$router.push('/facts/' + (parseInt(this.$route.params.id) + 1))
+      }
+    },
+    handleSwipeRight() {
+      if (this.$route.params.id === '1') {
+        this.$router.push('/facts/' + this.$store.state.fact.length)
+      } else if (this.$route.params.id <= this.$store.state.fact.length) {
+        this.$router.push('/facts/' + (parseInt(this.$route.params.id) - 1))
       }
     },
     changeBackground() {
