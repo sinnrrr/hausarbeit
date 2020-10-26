@@ -14,7 +14,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@100;200;400;700&display=swap',
+          'https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@400;700&display=swap',
       },
     ],
   },

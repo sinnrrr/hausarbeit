@@ -9,9 +9,9 @@
 }
 
 .landing__button {
-  border: $border-width solid map-get($colors, white);
+  border: $border_width solid map-get($colors, white);
   font-size: 2vmax;
-  font-weight: 700;
+  font-weight: $font_weight_bold;
   padding: 1vmax;
 
   &:nth-child(2n) {

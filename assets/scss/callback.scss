@@ -35,12 +35,12 @@
         cursor: pointer;
         transition: $transition;
         margin-top: 2vh;
-        border: $border-width solid map-get($colors, white);
+        border: $border_width solid map-get($colors, white);
         background-color: transparent;
         color: map-get($colors, white);
         font-size: 2vmax;
         padding: 1vh 0;
-        font-weight: 700;
+        font-weight: $font_weight_bold;
 
         &:hover, &:focus {
           background-color: map-get($colors, white);

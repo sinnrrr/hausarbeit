@@ -14,7 +14,7 @@
   }
 
   &__link:nth-last-of-type(1) {
-    margin-top: 40px;
+    margin-top: 10px;
 
     @media screen and (max-width: map-get($breakpoints, sm)) {
       & {
@@ -35,7 +35,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: $border-width solid map-get($colors, white);
+    border: $border_width solid map-get($colors, white);
     font-size: 4vmax;
 
     h1 {
@@ -48,10 +48,6 @@
         padding: 10px;
         display: inline-flex;
         flex-direction: row;
-
-        h1 {
-          margin-bottom: 20px;
-        }
       }
     }
   }
