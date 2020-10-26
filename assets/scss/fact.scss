@@ -1,6 +1,7 @@
 .fact {
   display: flex;
   padding: 1vh 4vw;
+  margin-top: 40px;
 
   @media screen and (max-width: map-get($breakpoints, sm)) {
     & {
@@ -44,7 +45,7 @@
     @media screen and (max-width: map-get($breakpoints, sm)) {
       & {
         margin-top: 40px;
-        padding: 10px 20px;
+        padding: 10px;
         display: inline-flex;
         flex-direction: row;
 

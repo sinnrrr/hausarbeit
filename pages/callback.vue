@@ -1,6 +1,5 @@
 <template>
   <section class="callback">
-    <h1 v-if="!success">Зв'язатись з розробником</h1>
     <p v-if="!success">
       Якщо ви маєте ідеї щодо покращення вигляду/роботи сайту, чи зауваження
       можете залишити повідомлення використовучючи дану форму.
@@ -41,6 +40,7 @@
 
 <script>
 export default {
+  layout: 'landing',
   data() {
     return {
       formValues: {},
