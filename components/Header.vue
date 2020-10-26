@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>Шлях, ціною в життя</h1>
+    <h1>{{ title }}</h1>
     <lazy-app-link to="/menu">
       <div class="burger">
         <img src="/svg/menu.svg" alt="Menu icon" />
@@ -12,5 +12,10 @@
 <script>
 export default {
   name: 'Header',
+  data() {
+    return {
+      title: process.env.appTitle,
+    }
+  },
 }
 </script>

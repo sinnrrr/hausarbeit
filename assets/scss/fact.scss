@@ -1,32 +1,49 @@
 .fact {
   display: flex;
-  min-height: 100vh;
-  padding: 0 20px;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1vh 4vw;
 
-  &__link {
-    &:nth-of-type(1) {
-      margin-right: 60px;
+  @media screen and (max-width: map-get($breakpoints, sm)) {
+    & {
+      flex-direction: column-reverse;
     }
+  }
 
-    &:nth-of-type(2) {
-      margin-left: 60px;
-    }
+  &__text {
+    font-size: 6vmin;
+  }
 
-    @media screen and (max-width: map-get($breakpoints, md)) {
+  &__link:nth-last-of-type(1) {
+    margin-top: 40px;
+
+    @media screen and (max-width: map-get($breakpoints, sm)) {
       & {
-        display: none;
+        margin-top: 0;
       }
     }
   }
 
   &__arrow {
-    width: 50px;
-    height: 50px;
+    width: 6vmin;
+    height: 6vmin;
   }
 
-  &__title {
+  &__controllers {
+    display: flex;
+    padding: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: $border-width solid map-get($colors, white);
     font-size: 4vmax;
+
+    @media screen and (max-width: map-get($breakpoints, sm)) {
+      & {
+        margin-top: 40px;
+        padding: 10px 20px;
+        display: inline-flex;
+        flex-direction: row;
+      }
+    }
   }
 }

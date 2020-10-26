@@ -12,9 +12,9 @@
       <div class="menu__container">
         <header class="menu__header">
           <h1>Меню</h1>
-          <lazy-app-link to="/" class="burger"
+          <a class="burger" @click.prevent="$router.go(-1)"
             ><img src="/svg/close.svg" alt="Close icon"
-          /></lazy-app-link>
+          /></a>
         </header>
         <span
           >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus

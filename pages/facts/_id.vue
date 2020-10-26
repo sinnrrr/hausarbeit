@@ -6,25 +6,29 @@
     @swipeleft="handleSwipeLeft"
     @swiperight="handleSwipeRight"
   >
-    <lazy-app-link :to="defineLink(-1)" class="fact__link"
-      ><img
-        class="fact__arrow"
-        src="/svg/left-arrow-angle.svg"
-        alt="Arrow to go back"
-    /></lazy-app-link>
-    <h1 class="fact__title">{{ currentFact.title }}</h1>
-    <lazy-app-link :to="defineLink(1)" class="fact__link"
-      ><img
-        class="fact__arrow"
-        src="/svg/right-arrow-angle.svg"
-        alt="Arrow to go forward"
-    /></lazy-app-link>
+    <div class="fact__controllers">
+      <lazy-app-link :to="defineLink(-1)" class="fact__link"
+        ><img
+          class="fact__arrow"
+          src="/svg/left-arrow-angle.svg"
+          alt="Arrow to go back"
+      /></lazy-app-link>
+      <h1 class="fact__title">{{ currentFactID }}</h1>
+      <lazy-app-link :to="defineLink(1)" class="fact__link"
+        ><img
+          class="fact__arrow"
+          src="/svg/right-arrow-angle.svg"
+          alt="Arrow to go forward"
+      /></lazy-app-link>
+    </div>
+    <span class="fact__text">{{ currentFact.title }}</span>
   </v-touch>
 </template>
 
 <script>
 export default {
   name: 'Fact',
+  layout: 'landing',
   data() {
     return {
       currentFactID: parseInt(this.$route.params.id),

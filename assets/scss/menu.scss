@@ -41,12 +41,6 @@
       padding-left: 2vw;
       max-width: 40vw;
       border-left: 1px solid map-get($colors, white);
-
-      span {
-        opacity: 0.8;
-        font-size: 4vmin;
-        font-family: 'Playfair Display', sans-serif;
-      }
     }
 
     @media screen and (max-width: map-get($breakpoints, xxl)) {

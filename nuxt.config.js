@@ -3,7 +3,7 @@ require('dotenv').config()
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Шлях, ціною в життя',
+    title: process.env.APP_TITLE,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -21,6 +21,7 @@ export default {
 
   env: {
     calendarURL: process.env.CALENDAR_URL,
+    appTitle: process.env.APP_TITLE,
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
