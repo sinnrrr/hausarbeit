@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>{{ title }}</h1>
+    <h1>{{ appName }}</h1>
     <lazy-app-link to="/menu">
       <div class="burger">
         <img src="/svg/menu.svg" alt="Menu icon" />
@@ -14,7 +14,7 @@ export default {
   name: 'Header',
   data() {
     return {
-      title: process.env.appTitle,
+      appName: process.env.appName,
     }
   },
 }

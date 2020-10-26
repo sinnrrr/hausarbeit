@@ -21,7 +21,7 @@ export default {
 
   env: {
     calendarURL: process.env.CALENDAR_URL,
-    appTitle: process.env.APP_TITLE,
+    appName: process.env.APP_NAME,
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
