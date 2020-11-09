@@ -17,10 +17,9 @@
           /></a>
         </header>
         <span
-          >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-          at delectus distinctio ducimus explicabo facere laudantium magni
-          nostrum omnis voluptatibus. Animi illum maxime nihil possimus
-          recusandae sit soluta ut. Ut.</span
+          >«Останні 33 роки я щоранку дивився в дзеркало і запитував себе: "Якщо
+          сьогодні буде останнім днем в моєму житті, чи буду я робити те, що
+          запланував на сьогодні?»</span
         >
       </div>
     </div>
